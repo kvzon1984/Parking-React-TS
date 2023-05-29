@@ -1,18 +1,10 @@
-import { useState } from "react"
+import AgregarVehiculoForm from "../forms/FormAgregarVehiculo"
 
-const AgregarVehiculo = () => {
-    const [patente, setPantete] = useState('')
-
+export default function AgregarVehiculo() {
     return (
-        <div className="container p-5">
-            <h1>Agregar Vehiculo</h1>
-            <input
-                type="text"
-                name="patente"
-                value={patente}
-            />
+        <div className="column is-6 is-offset-3">
+            <h1 className="column is-6 is-offset-3 is-size-3">Agregando Vehiculo</h1>
+            <AgregarVehiculoForm/>
         </div>
     )
 }
-
-export default AgregarVehiculo
